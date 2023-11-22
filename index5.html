@@ -15,6 +15,7 @@
   }
 </style>
 <body>
+  <div class="fixed-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">iRruz</a>
@@ -27,42 +28,41 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index1.html">Mac</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="index2.html">ipad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="index3.html">iphone</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index4.html">Watch</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index5.html">AirPods</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index6.html">Accessories</a>
-              </li>
+                  
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Products
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="index1.html">Mac</a></li>
+      <li><a class="dropdown-item" href="index2.html">ipad</a></li>
+      <li><a class="dropdown-item" href="index3.html">iPhone</a></li>
+      <li><a class="dropdown-item" href="index4.html">iWatch</a></li>
+      <li><a class="dropdown-item" href="index5.html">Airpods</a></li>
+      <li><a class="dropdown-item" href="index6.html">Accessories</a></li>
+    </ul>
+  </div>
               <li class="nav-item">
                 <a class="nav-link" href="index7.html">About Us</a>
               </li>
+              
+          <li class="nav-item">
+            <a class="nav-link" href="index9.html">Our Service</a>
+          </li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">TV&Home</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <a href=""><button type="button" class="btn btn-light">Log in</button></a>
-            <a href=""><button type="button" class="btn btn-light">Sign up</button></a>
+            <a href="index10.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Sign up
+            </button></a>
+                
           </div>
+          
         </div>
       </nav>
   
-      
+      </div>
 
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -70,7 +70,7 @@
           <p class="lead">AirPods connect to Apple devices wirelessly using Bluetooth technology,AirPods automatically pair with your Apple devices when you open the case near them, and they connect automatically when you put them in your ears.Transparency Mode allows you to hear and interact with the environment around you while still wearing your AirPods Pro.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <button type="button" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold">Shop now</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">More Details</button>
+           <a href="index.html"> <button type="button" class="btn btn-outline-secondary btn-lg px-4">More Details</button></a>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
@@ -79,7 +79,7 @@
       </div>
 
 
-
+      <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
@@ -247,7 +247,7 @@
           <div>
             <h3 class="fs-2 text-body-emphasis">Active Noise Cancellation </h3>
             <p>The AirPods Pro model features active noise cancellation, which helps block out external ambient sounds for a more immersive listening experience.</p>
-            <a href="#" class="btn btn-primary">
+            <a href="index.html" class="btn btn-success">
               Know more
             </a>
           </div>
@@ -259,7 +259,7 @@
           <div>
             <h3 class="fs-2 text-body-emphasis">Wireless Connectivity</h3>
             <p>AirPods connect to Apple devices wirelessly using Bluetooth technology, providing a seamless and convenient experience.</p>
-            <a href="#" class="btn btn-primary">
+            <a href="index.html" class="btn btn-success">
               Know more
             </a>
           </div>
@@ -271,14 +271,14 @@
           <div>
             <h3 class="fs-2 text-body-emphasis">Spatial Audio</h3>
             <p>This feature provides an immersive, theater-like audio experience by dynamically tracking your head movements and audio experience.</p>
-            <a href="#" class="btn btn-primary">
+            <a href="index.html"class="btn btn-success">
               Know more
             </a>
           </div>
         </div>
       </div>
     
-    
+    </div>
     
 
 
@@ -286,17 +286,67 @@
       
     
     
-      <footer class="py-3 my-4 ">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-        </ul>
-        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-      </footer>
   
+
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>About Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Our Service</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Discount</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Conatct</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Our Brand</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Luxury</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Branch</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
 
 

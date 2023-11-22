@@ -15,6 +15,7 @@
     }
   </style>
 <body>
+  <div class="fixed-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">iRruz</a>
@@ -27,57 +28,46 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index1.html">Mac</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="index2.html">ipad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="index3.html">iphone</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index4.html">Watch</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index5.html">AirPods</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index6.html">Accessories</a>
-              </li>
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index1.html">Mac</a></li>
+                  <li><a class="dropdown-item" href="index2.html">ipad</a></li>
+                  <li><a class="dropdown-item" href="index3.html">iPhone</a></li>
+                  <li><a class="dropdown-item" href="index4.html">iWatch</a></li>
+                  <li><a class="dropdown-item" href="index5.html">Airpods</a></li>
+                  <li><a class="dropdown-item" href="index6.html">Accessories</a></li>
+                </ul>
+              </div>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index7.html">About Us</a>
               </li>
+              
+          <li class="nav-item">
+            <a class="nav-link" href="index9.html">Our Service</a>
+          </li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">TV&Home</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <a href=""><button type="button" class="btn btn-light">Log in</button></a>
-            <a href=""><button type="button" class="btn btn-light">Sign up</button></a>
+            <a href="index10.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Sign up
+            </button></a>
+                
           </div>
+          
         </div>
       </nav>
 
-
-
+</div>
+      <div class="container">
       <div class="container position-relative zindex-5 pt-5">
         <div class="row">
           <div class="col-lg-6">
             
-            <!-- Breadcrumb -->
-            <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">
-                  <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">About Us</li>
-              </ol>
-            </nav>
-
+           
             <!-- Text -->
             <h1 class="pb-2 pb-md-3">About iRruz</h1>
             <p class="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" style="max-width: 526px;">Welcome to iRruz, your ultimate destination for all things Apple. At iRruz, we are dedicated to providing you with the latest and greatest Apple products, accessories, and information, all in one place. Our passion for innovation, design, and technology drives us to curate an exceptional collection for Apple enthusiasts and tech-savvy individuals alike.</p>
@@ -378,30 +368,87 @@
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">iRruz</h1>
             <p class="col-md-8 fs-4">Welcome to iRruz, your ultimate destination for all things Apple. At iRruz, we are dedicated to providing you with the latest and greatest Apple products.</p>
-            
-            <p class="col-md-8 fs-4">email:irbazahmeds20@gmail.com</p>
-            <p class="col-md-8 fs-4">Phone:+91 9363466343</p>
-            <button class="btn btn-primary btn-lg" type="button">More details</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+              <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+              <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+            </svg><a href="#">irbazahmeds20@gmail.com</a>
+            <div class="d-none d-sm-block">
+              
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+              <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+            </svg><a href="#">+91 9363466343</a>
           </div>
+          
+          <button type="button" class="btn btn-warning">More details</button>
         </div>
     
         </div>
     
       </div>
+</div>
 
 
 
-      <footer class="py-3 my-4 ">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>About Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
         </ul>
-        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-      </footer>
-  
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Our Service</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Discount</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Conatct</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Our Brand</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Luxury</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Branch</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2023 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
 
 
 
